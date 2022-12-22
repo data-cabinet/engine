@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <title>Documentation for the Database class</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>Database</h1>
+  <p>The Database class represents a file-based database. It stores tables and relationships in files, and uses the JSON, YAML and XML formats to define data. It has the following properties and methods:</p>
+  <h2>Properties</h2>
+  <ul>
+    <li><code>tables</code>: A list of table names, stored as filenames in the format {tablename}.json</li>
+    <li><code>relationships</code>: A list of relationships between tables, stored as strings in the format {table1}:{table2}</li>
+    <li><code>declarations</code>: A list of table declarations, stored as filenames in the format {tablename}.yaml</li>
+    <li><code>name</code>: The name of the database</li>
+    <li><code>description</code>: A description of the database</li>
+  </ul>
+  <h2>Methods</h2>
+  <ul>
+    <li><code>add_table(name)</code>: Adds a new table to the database with the given name</li>
+    <li><code>delete_table(name)</code>: Deletes the table with the given name from the database</li>
+    <li><code>add_relationship(table1, table2)</code>: Adds a relationship between the two given tables</li>
+    <li><code>delete_relationship(table1, table2)</code>: Deletes the relationship between the two given tables</li>
+  </ul>
+</body>
+</html>
